@@ -1,1 +1,126 @@
-Ann model
+# 📊 Customer Churn Prediction (Deep Learning + Streamlit Web App)
+
+A complete **end-to-end machine learning project** that predicts whether a bank customer will **churn (leave the bank)** using an **Artificial Neural Network (ANN)** built with TensorFlow/Keras.
+The project includes:
+
+✔ Data preprocessing
+✔ Feature engineering
+✔ Model training
+✔ Saving encoders & scalers
+✔ A fully interactive **Streamlit web application**
+
+---
+
+## 🚀 Live Demo (Local)
+
+Run the app:
+
+```bash
+streamlit run app.py
+```
+
+---
+
+## 🌟 Features
+
+### **🔮 Machine Learning Model**
+
+* Built using a **3-layer Artificial Neural Network**
+* Uses:
+
+  * StandardScaler
+  * OneHotEncoder (Geography)
+  * LabelEncoder (Gender)
+* Trained on **10,000 customer records**
+
+### **🖥 Streamlit Web UI**
+
+* Dark theme modern UI
+* Dropdowns for Geography & Gender
+* Sliders for Age & Tenure
+* Buttons for Salary, Balance, Credit Score
+* Final prediction displayed instantly with interpretation:
+
+✔ “Customer is likely to stay”
+❌ “Customer is likely to churn”
+
+---
+
+## 🗂 Project Structure
+
+```
+.
+├── app.py
+├── Churn_Modelling.csv
+├── experiment.ipynb
+├── prediction.ipynb
+├── model.h5
+├── scaler.pkl
+├── label_encoder_gender.pkl
+├── onehot_encoder_geo.pkl
+├── logs/
+├── .gitignore
+└── requirment.txt
+```
+
+---
+
+## 🔧 Installation
+
+### **1️⃣ Clone the repo**
+
+```bash
+git clone https://github.com/Manasv-ai/customer_churn_prediction.git
+cd customer_churn_prediction
+```
+
+### **2️⃣ Install dependencies**
+
+```bash
+pip install -r requirment.txt
+```
+
+---
+
+## ▶️ Usage
+
+### **Run Streamlit App**
+
+```bash
+streamlit run app.py
+```
+
+### **OR Run the Prediction Notebook**
+
+Open:
+
+* `experiment.ipynb` → Model training
+* `prediction.ipynb` → Testing on custom inputs
+
+---
+
+## 📈 Model Architecture
+
+| Layer Type | Units | Activation |
+| ---------- | ----- | ---------- |
+| Dense      | 6     | ReLU       |
+| Dense      | 6     | ReLU       |
+| Output     | 1     | Sigmoid    |
+
+Loss: **binary_crossentropy**
+Optimizer: **Adam**
+---
+
+## 📌 Improvements (Future Work)
+
+* Deploy on **AWS / Render / HuggingFace Spaces**
+* Implement **XGBoost** and compare results
+* Add **model explainability** (SHAP values)
+* Add **customer segmentation dashboard**
+
+---
+
+## 📬 Contact
+
+**Manas Khatri**
+🔗 GitHub: [Manasv-ai](https://github.com/Manasv-ai)
